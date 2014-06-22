@@ -10,6 +10,7 @@ The original dataset is divided into two part: training data and testing data. T
 
 ## R Code
 run_analysis.R contains codes for this project. In particular, it does the following:
+
 1. downloading and unziping data
 2. merge training and testing data
 3. extract measurements related to mean and standard deviation.
@@ -21,10 +22,10 @@ run_analysis.R contains codes for this project. In particular, it does the follo
 Please refer to the comments in the code for technical details.
 
 ## Output Data
-Please see either tidy.txt or tidy.csv for the tidy data asked for in the project. These two file contain the same data but in different format. Use the following code to read the file into R:
+Please see either tidy.txt or tidy.csv for the tidy data asked for in the project. These two file contain the same data but in different format. Use `tidy <- read.table("tidy.txt")` to read the file into R.
 
-tidy <- read.table("tidy.txt")
-
-The first three columns in the tidy data contians activityID, SubjectID and activity name. All remaining columns are the mean of the measurement. Each column is labeled using names in feature.txt. Since R does not allow "()" and "-" in column name, I eliminated "()" and replaced "-" with ".". For example, tBodyAcc-mean()-X becomes tBodyAcc.mean.X. 
+The first three columns in the tidy data contians activityID, SubjectID and activity name. All remaining columns are the mean of the measurement. Unit is the same as the original file. Each column is labeled using names in feature.txt. Since R does not allow "()" and "-" in column name, I eliminated "()" and replaced "-" with ".". For example, tBodyAcc-mean()-X becomes tBodyAcc.mean.X. 
 
 Since the assignment ask for only "mean and standard deviation for each measurement", I included only features that contain either "mean()" or "std()" in its name. In total, there are 66 measurements (out of 561) and therefore 66 such columns.
+
+In conclusion, the tidy data set contains the mean of all measurement related to mean and standard deviation for each activity and each subject.
