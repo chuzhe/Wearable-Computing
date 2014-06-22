@@ -92,9 +92,3 @@ write.csv(tidy_plyr,file="tidy.csv",row.names=FALSE)
 # write.csv(tidy_dt,file="tidy_dt.csv",row.names=FALSE)
 
 
-## relevant website: http://stackoverflow.com/questions/10787640/ddply-summarize-for-repeating-same-statistical-function-across-large-number-of
-## data table: https://github.com/raphg/Biostat-578/blob/master/Advanced_data_manipulation.Rpres
-## plyr tutorial: http://plyr.had.co.nz/09-user/
-## reshape tutorial: http://www.slideshare.net/jeffreybreen/reshaping-data-in-r
-## plyr primer: http://www.r-bloggers.com/a-quick-primer-on-split-apply-combine-problems/
-
