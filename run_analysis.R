@@ -4,8 +4,10 @@ rm(list=ls())
 # File download and unzip
 
 ## parameters input
+
+## directory of the code. Please change this accordingly!
 CodeDir = "E:\\Dropbox\\Data Science Coursera\\Getting and Cleaning Data\\Project\\Wearable-Computing"
-setwd(CodeDir)  ## Code directory
+setwd(CodeDir)  
 fileDir <- "./data"
 filename <- "Dataset.zip"
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
