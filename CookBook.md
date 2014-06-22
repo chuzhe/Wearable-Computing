@@ -23,7 +23,7 @@ Please refer to the comments in the code for technical details.
 ## Output Data
 Please see either tidy.txt or tidy.csv for the tidy data asked for in the project. These two file contain the same data but in different format. Use the following code to read the file into R:
 
-tidy_plyr_read <- read.table("tidy_plyr.txt")
+tidy <- read.table("tidy.txt")
 
 The first three columns in the tidy data contians activityID, SubjectID and activity name. All remaining columns are the mean of the measurement. Each column is labeled using names in feature.txt. Since R does not allow "()" and "-" in column name, I eliminated "()" and replaced "-" with ".". For example, tBodyAcc-mean()-X becomes tBodyAcc.mean.X. 
 
