@@ -19,6 +19,8 @@ run_analysis.R contains codes for this project. In particular, it does the follo
 6. create a new dataset. This dataset take the average of each variables for each activity and each subject
 7. output the dataset to a new file
 
+In order for the code to run correctly, you need to change `CodeDir` to the local directory of your code.
+
 Please refer to the comments in the code for technical details.
 
 ## Output Data
